@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Header from './components/Header'
 
 const App = () => {
-  const [feedback, setFeedback] = useState('')
+  const [feedback, setFeedback] = useState()
 
   return (
     <>

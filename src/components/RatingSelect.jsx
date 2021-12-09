@@ -9,11 +9,12 @@ const RatingSelect = ({ select }) => {
   }
 
   const ratingArray = [...Array(10)].map((_, i) => {
+    const id = ++i
     return {
       type: 'radio',
-      id: `num${++i}`,
+      id: `num${id}`,
       name: 'rating',
-      value: `${i}`,
+      value: `${id}`,
       handler: (e) => handleChange(e),
     }
   })

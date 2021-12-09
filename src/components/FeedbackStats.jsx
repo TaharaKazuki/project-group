@@ -4,7 +4,6 @@ import PropTypes from 'prop-types'
 const FeedbackStats = ({ feedback }) => {
   let average =
     feedback.reduce((acc, cur) => {
-      console.info(acc)
       return acc + cur.rating
     }, 0) / feedback.length
 

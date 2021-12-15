@@ -1,7 +1,11 @@
-import React from 'react'
+import { FC } from 'react'
 
-const Home = () => {
-  return <div></div>
+const Home: FC = () => {
+  return (
+    <div>
+      <h1 className="text-6xl">Welcome</h1>
+    </div>
+  )
 }
 
 export default Home
